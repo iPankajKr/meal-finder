@@ -24,7 +24,6 @@ function searchMeal(e){
             )
             .then(res => res.json())
             .then(data => {
-                resultHeading.innerHTML = `<h2>Search result for ${term}`;
                 if(data.meals === null) {
                     resultHeading.innerHTML = `<h2>Nothing found for ${term}</h2>`
                 }
